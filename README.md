@@ -12,11 +12,5 @@ Docker :
   - Docker-Compose(Apache)
   - Commands
   - GIT / GitHub
-
-  - JavaScript
-  - HTML
-  - CSS
-  - Boostrap 5.2
-  - Git skills
   
 Be free to copy any code you need.
