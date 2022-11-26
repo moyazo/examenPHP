@@ -1,0 +1,15 @@
+/* BODY DIMENSIONS */
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* INDEX.PHP CONTAINER */
+
+/* #container{
+   
+} */
+h1{
+    padding-left: 40%;
+}
