@@ -38,3 +38,9 @@ $cliente1->alquilar($soporte4);
 // $cliente1->listaAlquileres();
 //este cliente no tiene alquileres
 echo "<br>".$cliente2->devolver(2);
+
+
+
+
+
+

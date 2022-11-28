@@ -40,9 +40,7 @@ class Videoclub{
     public function listarProductos(){
         $listadoP = $this->productos;
         $listadonumP =  [];
-
-
-        echo "LISTADO DE PRODUCTOS: <br><br>";
+        
         for($i=0; $i < sizeof($this->productos) ; $i++) { 
             array_push($listadonumP,$listadoP[$i]);
             for ($j=0; $j < sizeof($listadonumP[$i]); $j++) { 
@@ -57,7 +55,6 @@ class Videoclub{
         $listadonumS =  [];
 
 
-        echo "LISTADO DE SOCIOS: <br><br>";
         for($i=0; $i < sizeof($this->socios) ; $i++) { 
             array_push($listadonumS,$listadoS[$i]);
             for ($j=0; $j < sizeof($listadonumS[$i]); $j++) { 

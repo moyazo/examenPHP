@@ -13,7 +13,7 @@ $vc->incluirDisco("El Imperio Contraataca", 3, "es,en","16:9");
 
 
 //listo los productos 
-$vc->listarProductos(); 
+// $vc->listarProductos(); 
 
 //voy a crear algunos socios 
 $vc->incluirSocio("Amancio Ortega",2); 
@@ -29,4 +29,4 @@ $vc->incluirSocio("Pablo Picasso", 2);
 // $vc->alquilaSocioProducto(1,6); 
 
 //listo los socios 
-$vc->listarSocios();
+// $vc->listarSocios();

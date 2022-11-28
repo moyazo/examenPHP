@@ -7,7 +7,7 @@ if (isset($_POST['sumbit'])) {
 
     // validamos que recibimos ambos parámetros
     if (empty($usuario) || empty($password)) {
-        $error = "Debes introducir un usuario y contraseña";
+        $error = "Debes introducir un usuario y contraseña <br><br>";
         echo $error;
         include "index.php";
     } else {
@@ -16,11 +16,11 @@ if (isset($_POST['sumbit'])) {
             session_start();
             $_SESSION['usuario'] = $usuario;
             // cargamos la página principal
-            include "test.php";
+            include "main.php";
         } else {
             // Si las credenciales no son válidas, se vuelven a pedir
            
-            $error = "Usuario o contraseña no válidos!";
+            $error = "Usuario o contraseña no válidos! <br><br>";
             echo $error;
             include "index.php";
         }

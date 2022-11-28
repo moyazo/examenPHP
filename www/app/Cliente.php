@@ -8,6 +8,8 @@ class Cliente{
     private int $maxAlquilerConcurrente = 3;
 
 
+
+
     public function __construct(string $nombre,int $num){
         $this->nombre = $nombre;
         $this->setNumero($num);
@@ -105,6 +107,12 @@ class Cliente{
         // echo parent::muestraResumen();
     }
 }
+
+
+
+
+
+
 
 
 
