@@ -1,8 +1,8 @@
 <?php
-include "Soporte.php";
-include "Cliente.php";
-include "Disco.php";
-include "Juego.php";
+ include_once  "./app/Soporte.php";
+ include_once  "./app/Cliente.php";
+ include_once  "./app/Disco.php";
+ include_once  "./app/Juego.php";
 
 //instanciamos un par de objetos cliente
 
@@ -20,9 +20,8 @@ $soporte3 = new Disco("El Imperio Contraataca", 2, 3, "es,en","16:9");
 $soporte4 = new Disco("Cars", 4, 3, "es,en","16:9");
 
 //alquilo algunos soportes
-$cliente1->alquilar($soporte1);
-$cliente1->alquilar($soporte2);
-$cliente1->alquilar($soporte3);
+$cliente1->alquilar($soporte1)->alquilar($soporte2)->alquilar($soporte3);
+
 
 //voy a intentar alquilar de nuevo un soporte que ya tiene alquilado
 $cliente1->alquilar($soporte2);

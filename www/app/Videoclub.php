@@ -1,8 +1,8 @@
 <?php 
-include "Soporte.php";
-include "Cliente.php";
-include "Disco.php";
-include "Juego.php";
+ include_once  "Soporte.php";
+ include_once  "Cliente.php";
+ include_once  "Disco.php";
+ include_once  "Juego.php";
 class Videoclub{
     private string $nombre = "";
     private $productos = [];

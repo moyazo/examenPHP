@@ -48,21 +48,21 @@ class Cliente{
             if(in_array($s->getNumero(),$this->soporteAlquilados) && ($this->getNumSoportesAlquilados() == $this->maxAlquilerConcurrente)){
                 echo "El soporte ya está alquilado.
                      Además, has superado el limite de alquiler (".$this->maxAlquilerConcurrente.")<br><br>";
-                     return true;
+                     return $this;
             }else if(in_array($s->getNumero(),$this->soporteAlquilados) && ($this->getNumSoportesAlquilados() < $this->maxAlquilerConcurrente)){
                 echo "El soporte ya está alquilado. Alquile otro soporte.<br>
                 Soportes alquilados:".$this->getNumSoportesAlquilados()."<br> Alquileres máximos: ".$this->maxAlquilerConcurrente."<br><br>";
-                return true;
+                     return $this;
             }else if(!in_array($s->getNumero(),$this->soporteAlquilados) && ($this->getNumSoportesAlquilados() == $this->maxAlquilerConcurrente)){
                     echo "El soporte no está alquilado.
                     Pero, has superado el limite de alquiler (".$this->maxAlquilerConcurrente.")<br><br>";
-                    return false;
+                    return $this;
             }else if(!in_array($s->getNumero(),$this->soporteAlquilados) && ($this->getNumSoportesAlquilados() < $this->maxAlquilerConcurrente)){
                 $this->numSoportesAlquilados++;
                 array_push($this->soporteAlquilados,$s->getNumero());
                 echo "<br>".$s->titulo." ALQUILADO <br>
                 Soportes alquilados:".$this->getNumSoportesAlquilados()."<br> Alquileres máximos: ".$this->maxAlquilerConcurrente."<br><br>";
-                return false;
+                return $this;
             }
 
     }

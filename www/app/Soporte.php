@@ -1,6 +1,6 @@
 <?php 
 // EJERCICIO 1 - EXAMEN
-include "Resumible.php";
+include_once  "Resumible.php";
 
 abstract class Soporte implements Resumible // Al crear una clase abstracta, nos permiten tener una clase base con cierta funcionalidad común ya implementada, sobre la que podemos heredar y especificar algunos métodos
 {
