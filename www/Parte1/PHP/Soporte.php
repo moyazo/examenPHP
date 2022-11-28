@@ -1,7 +1,8 @@
 <?php 
 // EJERCICIO 1 - EXAMEN
+include "Resumible.php";
 
-abstract class Soporte // Al crear una clase abstracta, nos permiten tener una clase base con cierta funcionalidad común ya implementada, sobre la que podemos heredar y especificar algunos métodos
+abstract class Soporte implements Resumible // Al crear una clase abstracta, nos permiten tener una clase base con cierta funcionalidad común ya implementada, sobre la que podemos heredar y especificar algunos métodos
 {
    private const IVA = 0.21; 
    public string $titulo = "";
@@ -38,7 +39,7 @@ abstract class Soporte // Al crear una clase abstracta, nos permiten tener una c
       return $this->numero ;
    }
    
-   public function muestraResumen()
+   public function mostrarResumen()
    {
     $resumen = "Este es el resumen de este soporte: <br> Titulo: " . $this->titulo .
     "<br> Número: " . $this->getNumero() . "<br> Precio / Precio con IVA: " . $this->getPrecio()."/".$this->getPrecioConIva();
